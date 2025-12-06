@@ -1,195 +1,291 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
+%	Copyright (c) 2021 Jitin Nair
 %
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
 %
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
-%----------------------------------------------------------------------------------------
- 
-\documentclass{resume} % Use the custom resume.cls style 
-
-\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Akshay Vaishnav} % Your name 
-\address{C-101, Dreamland Apartment, Backbone Park, B/H Balaji Hall, Rajkot-360004, Gujarat} % Your address 
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional) 
-\address{+91 720 393 7889 \\ vaishnavakshay007@gmail.com} % Your phone number and email
-
-\begin{document}  
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	DOCUMENT DEFINITION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Education}
-
-{\bf Bachelor of Engineering in Mechanical Engineering} \hfill {August 2012 - May 2016}
-\\ 
-Sanjaybhai Rajguru College of Engineering, Rajkot 
-\\
-Gujarat Technological University,  CGPA: 8.38/10.00   
-
-{\bf HSC, Class XII} \hfill {June 2010 - April 2012}
-\\ 
-Shree S.G. Dholakiya Higher Secondary School, Rajkot, Gujarat, 57\%
-
-{\textbf{SSC, Class X}}  \hfill{March 2009 - March 2010}\\
-Shree S.G. Dholakiya Secondary School, Rajkot, Gujarat, 83\%    
-%Minor in Linguistics \smallskip \\
-%Member of Eta Kappa Nu \\
-%Member of Upsilon Pi Epsilon \\
-
-
-\end{rSection} 
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
+%	FONT
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{skills and INTERESTS}
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \setmainfont{Cambria}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
-Interests & Product Development, Design, Automobile, CAD/CAE, Finite Element Analysis, \\& Optimization, Fluid Mechanics, Robotics, Modeling and Simulation\\    
-Design Software & Basic AUTOCAD, CATIA V5, ANSYS (Static Structural, Transient Structural, \\& Static Thermal, Transient Thermal, Harmonic Response, Model analysis, Acoustic, Fluent), \\& OptimumLap,  MATLAB\\      
- 
-\end{tabular}   
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
 
-\end{rSection}
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
 
-%-------------------------------------------------------------------------------
-%	PROJECTS
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
 
-\begin{rSection}{PROJECTS}
+%tabularx environment
+\usepackage{tabularx}
 
-\begin{rSubsection}{Design Optimization of Hydraulic Press Plate using Finite Element
-\\Analysis} {January 2016 - April 2016}{Major Project as a part of curriculum}{}
+%for lists within experience section
+\usepackage{enumitem}
 
-\item An Industrial Defined Project in collaboration with Incredible Machines, Rajkot
-\item Designed and performed an FEA analysis of the plates of Hydraulic machine with the capacity of 250-ton    
-\item Optimization in terms of design and material reduction, leading to cost effectiveness, considering minimum \\deformation of plates during operation 
- 
-\end{rSubsection}  
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
 
-%------------------------------------------------
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
 
-\begin{rSubsection}{Mathematical Modeling and Analysis of a Hydro-pneumatic Suspension
-\\Column of a Car}{July 2015 - October 2015}{Minor Project as a part of curriculum}{} 
-\item Modeled a 2-DOF system considering sprung and unsprung mass of the vehicle
-\item Performed sensitivity analysis to minimize the displacement of sprung and unsprung mass caused by vehicle hitting a bump using Transfer Function approach  
-\item The settling time and displacement of the system were decreased using Hydro-pneumatic suspension system   
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
 
-\end{rSubsection}
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
 
-%-------------------------------------------------
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
 
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
 
-\begin{rSubsection}{Design and Thermal analysis of Disk Brake Rotor using ANSYS}{March 2016}{GT Motorsports,a Formula Student Team of GTU}{}
+%for social icons
+\usepackage{fontawesome5}
 
-\item Applied Energy Equation to calculate theoretical data for the input of simulation
-\item Devised boundary conditions for modeling the system by calculating including Heat power and Heat flux    
-\item A Static thermal analysis in ANSYS Workbench using real time boundary conditions to obtain temperature distribution of Brake Rotor  
-
-\end{rSubsection}
-
-%-------------------------------------------------- 
-
-\begin{rSubsection}{Design, Development and Analysis of Exhaust System and  Muffler assembly}{Sept 2015 - Jan 2016}{GT Motorsports,a Formula Student Team of GTU}{}    
-
-\item Design and Development of complete muffler assembly for the reduction of noise under 110 dBC as per the rulebook        
-\item Modeling and Acoustics analysis of muffler assembly in ANSYS to determine the  Transmission Loss
-\item A CFD analysis of Exhaust Manifold using ANSYS Fluent to optimize the exhaust gas flow
-
-\end{rSubsection} 
-
-\end{rSection} 
-
-%--------------------------------------------------------------------------------------
-%   Research Publications 
-%--------------------------------------------------------------------------------------
-\begin{rSection}{ Research Publication } \itemsep -3pt        
-
-{\textbf{Akshay Vaishnav}, Path Lathiya, Mohit Sarvaiya"\textit{Design Optimization of Hydraulic Press Plate using Finite \\Element Analysis}"Vol. 6 - Issue 5, International Journal of Engineering Research and Applications (IJERA), \\ISSN: 2248-9622 } \hfill May 2016 \\    
- 
-\end{rSection}
+%debug page outer frames
+%\usepackage{showframe}
 
 
-%	INTERNSHIP/TRAININGS 
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{INTERNSHIP/TRAININGS} \itemsep -3pt  
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
 
-{\textbf{Automotive Industry Simulation Internship}, \\Expertshub,Sinhgad Institute of Engineering, Pune } \hfill June 2015 \\   
-{\textbf{Machining and Quality Control of Forged Connecting Rods}, \\Amul Group of Industries, Rajkot} \hfill February 2015 \\     
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{AHMED FARAZ} \\[7.5pt]
+\href{mailto:ahmedfaraz.contact@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ ahmedfaraz.contact@gmail.com} \ $|$ \ 
+\href{tel:+923413901064}{\raisebox{-0.05\height}\faMobile \ +92 341 3901064} \\
+% \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+\href{https://linkedin.com/in/aahmedfaraz}{\raisebox{-0.05\height}\faLinkedin\ aahmedfaraz} \ $|$ \ 
+\href{https://github.com/aahmedfaraz}{\raisebox{-0.05\height}\faGithub\ aahmedfaraz} \ $|$ \ 
+\end{tabularx}
 
-\end{rSection}  
- 
- %-----------------------------------------------------------------------------
- % POSITION OF RESPONSIBILITY
- %-----------------------------------------------------------------------------
-  
-\begin{rSection}{POSITION OF RESPONSIBILITY}
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
 
-\begin{rSubsection}{CAE and Powertrain Lead, Formula SAE}{August 2015 - Present}{GT Motorsports,a Formula Student Team of GTU}{}              
-\item Devised the design objectives and validation of designs through simulations and testings
-\item Concentrated on real time simulation of Exhaust System and the noise reduction of Exhaust system
-\item Part of core Design group in the team helping with various design decisions  
-\item Performed numerous simulations of various components of the car in the area of FEA and CFD segments with documentations   
-\end{rSubsection}  
-
-%------------------------------------------------
-
-\begin{rSubsection}{Head coordinator of Mechanical section at Robotics club} {July 2015 - May 2016}{Sanjaybhai Rajguru College of Engineering}{} 
-\item A college level Robotics club established by students with the aim of learning and professional skill development \\among students and peers            
-\item Lead in Mechanical work of Robotics club, working mostly with CAD and Hardware systems
-\item Team leader and active member working to develop various robots of different concepts and configurations     
-\end{rSubsection}
-
-\end{rSection}
-  
-
-%--------------------------------------------------------------------------------------
-% Extra-Cirrucular
-%--------------------------------------------------------------------------------------
-
-\begin{rSection}{Extra-Cirrucular} \itemsep -2pt   
-
+%Honors / Achievements
+\section{Honors \& Achievements}
 \begin{itemize}
- 
-\item STTP on \textbf{Life Long Research} under TEQIP-II, SVNIT, Surat \hfill February 2016 
-\item Participated in \textbf{Formula Student India}, An International FSAE competition,  
-\\Secured 9th rank overall \& 4th in Endurance \hfill January 2016  
-\item Seminar on \textbf{Introduction to Robotics and Arduino Programming}, SRCOE,Rajkot \hfill July 2015 
-\item \textbf{Junkyard}, BRIZINGER'15, a National Level Techfest,  GEC, Rajkot \hfill March-2015
-\item Seminar on \textbf{Rapid Prototyping}, COGNIZANCE 2K14, a National Level Technical Festival, \\CSPIT, Charotar  \hfill September-2014   
-\item \textbf{Rise of Machine}, PRAKARSH 9.0, a National Level Technical Symposium, SVIT, Vasad \hfill March-2014  
+\item IELTS – 7.5 (Speaking-7.5, Reading-8.5, Listening-7.5, Writing-6.5)
+\item Won Harvard CS50x Puzzle Day 2025 [\href{https://certificates.cs50.io/5ed8854f-112a-4bbb-bb85-108d92f3233b.pdf?size=letter}{link}]
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Language} &  \normalsize{JavaScript, Typescript, and Python}\\
+\textbf{Infrastructure-as-Code (IaC)} &  \normalsize{AWS CDK for designing and deploying serverless architectures}\\
+\textbf{20+ AWS Services} &  \normalsize{IAM, Lambda, Appsync, Cognito, S3, Pinpoint, etc.}\\
+\textbf{Frontend Development} &  \normalsize{React, Next.js}\\
+\textbf{Backend Development} &  \normalsize{Node.js, AWS serverless stack}\\
+\textbf{SQL Databases} &  \normalsize{Amazon Aurora, RDS (MySQL, PostgreSQL), Redshift (SQL)}\\
+\textbf{NoSQL Databases} &  \normalsize{DynamoDB, MongoDB}\\
+\end{tabularx}
+
+% %Experience
+% \section{Work Experience}
+
+% \begin{jobshort}{Designation}{Jan 2021 - present}
+% long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
+% \end{jobshort}
+
+
+% \begin{joblong}{Designation}{Mar 2019 - Jan 2021}
+% \item long long line of blah blah that will wrap when the table fills the column width
+% \item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+% \end{joblong}
+
+% Work Experience
+\section*{Work Experience {\small (Overall 4+ years)}}
+\sloppy
+
+% Road2Crypto
+\textbf{AWS Full Stack Developer} \hfill \textbf{Remote} (2+ years)\\
+\textbf{Road2Crypto – Miami, Florida, USA} \hfill Mar'23 - Aug'25
+\begin{itemize}
+    \setlength{\itemsep}{2pt} % space between items
+    \setlength{\parskip}{0pt} % extra paragraph spacing
+    % \setlength{\topsep}{0pt}  % space above/below the list
+    \item \textbf{Built and launched Road2Crypto.}
+    \item A multi-wallet crypto tracker with cross-chain insights.
+    \item \textbf{Collaborated remotely with an international team} to deliver key product features.
+\end{itemize}
+
+% Panacloud
+\textbf{AWS Modern Apps Full Stack Developer} \hfill \textbf{On-site} (1.5 years)\\
+\textbf{Panacloud – Karachi, Pakistan} \hfill Oct'21 - Feb'23
+\begin{itemize}
+    \setlength{\itemsep}{2pt} % space between items
+    \setlength{\parskip}{0pt} % extra paragraph spacing
+    % \setlength{\topsep}{0pt}  % space above/below the list
+    \item Joined as a Cloud Intern working on eCommerce and EdTech apps on AWS.
+    \item \textbf{Promoted to Full Stack Developer} delivering new cloud features.
+    \item Led frontend, backend, and AWS CDK infrastructure development.
+    \item \textbf{Built scalable systems} using Lambda, DynamoDB, Aurora, and ApiGateway.
+    \item Integrated CloudWatch, SQS, SES/Pinpoint, and Glue in the system.
+    \item Delivered secure, cost-efficient, and reliable cloud solutions.
+\end{itemize}
+
+
+% Teaching Experience
+\section*{Teaching Experience {\small (Overall 2+ years)}}
+\sloppy
+
+% Road2Crypto
+\textbf{Founder and Instructor} \hfill \textbf{Self-employed – Remote} (1 year)\\
+\textbf{Techbeez Educations – Karachi, Pakistan} \hfill Jul'22 - Jul'23
+\begin{itemize}
+    \setlength{\itemsep}{2pt} % space between items
+    \setlength{\parskip}{0pt} % extra paragraph spacing
+    % \setlength{\topsep}{0pt}  % space above/below the list
+    \item \textbf{Created and taught} the Techbeez FWDP – Frontend Web Developer Program.
+    \item Modules: Basics, Hands-on, Advanced.
+    \item Taught \textbf{web fundamentals}, hands-on \textbf{JS projects}, and \textbf{advanced React}.
+    \item Provided a full lesson plan and recorded video lectures for all modules.
+\end{itemize}
+
+% Panacloud
+\textbf{Lead Technical Instructor} \hfill \textbf{Part-time – On-site} (1.5 years)\\
+\textbf{Axiom Education – Karachi, Pakistan} \hfill Oct’21 – Feb’23
+\begin{itemize}
+    \setlength{\itemsep}{2pt} % space between items
+    \setlength{\parskip}{0pt} % extra paragraph spacing
+    % \setlength{\topsep}{0pt}  % space above/below the list
+    \item Promoted from Assistant Instructor to \textbf{Lead Instructor}, teaching \textbf{MERN} stack (MongoDB, Express.js, React, Node.js) across multiple batches.
+    \item Delivered \textbf{live-coding, project-based sessions} for practical learning.
+    \item Mentored junior instructors and ensured consistent learning outcomes.
+    \item \textbf{Trained 300+ students} preparing for entry into the tech industry.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2019 - 2023 & Bachelor of Software Engineering (BSE)\\at \textbf{Bahria University Karachi Campus} \hfill \normalsize (GPA: 3.09/4.0) \\
+
+% \begin{tabularx}{\linewidth}{@{}l X@{}}	
+% 2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+
+% 2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+
+% 2022 & Class 12th Some Board \hfill  (Grades) \\
+
+% 2021 & Class 10th Some Board \hfill  (Grades) \\
+\end{tabularx}
   
-\end{itemize}  
+% %Projects
+% \section{Projects}
 
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+% \end{tabularx}
 
-\end{rSection} 
+% %----------------------------------------------------------------------------------------
+% %	PUBLICATIONS
+% %----------------------------------------------------------------------------------------
+% \section{Publications}
+% \begin{refsection}[citations.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
 
-%---------------------------------------------------------------------------------
-%  DECLARATION
-%--------------------------------------------------------------------------------
+\vfill
+\center{\footnotesize Last updated: \today}
 
-\begin{rSection}{ Declaration  } \itemsep -3pt        
-
-\item I hereby declare that all the details furnished above are true to the best of my knowledge and belief.   
-  
-\end{rSection}
 \end{document}
