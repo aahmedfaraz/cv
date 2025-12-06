@@ -22,28 +22,29 @@ jobs:
           mkdir public
           # Copy PDF as-is
           cp cv.pdf public/cv.pdf
+          
           # Create index.html with embedded PDF viewer + download button
           cat > public/index.html << 'EOF'
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Ahmed Faraz CV</title>
-  <style>
-    body, html { margin: 0; height: 100%; }
-    .top-bar { text-align: center; padding: 10px; background: #0d6efd; }
-    .top-bar a { color: white; font-weight: bold; text-decoration: none; font-size: 18px; }
-    iframe { border: none; width: 100%; height: calc(100% - 50px); }
-  </style>
-</head>
-<body>
-  <div class="top-bar">
-    <a href="cv.pdf" target="_blank">⬇ Download CV (PDF)</a>
-  </div>
-  <iframe src="cv.pdf"></iframe>
-</body>
-</html>
-EOF
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <title>Ahmed Faraz CV</title>
+              <style>
+                body, html { margin: 0; height: 100%; }
+                .top-bar { text-align: center; padding: 10px; background: #0d6efd; }
+                .top-bar a { color: white; font-weight: bold; text-decoration: none; font-size: 18px; }
+                iframe { border: none; width: 100%; height: calc(100% - 50px); }
+              </style>
+            </head>
+            <body>
+              <div class="top-bar">
+                <a href="cv.pdf" target="_blank">⬇ Download CV (PDF)</a>
+              </div>
+              <iframe src="cv.pdf"></iframe>
+            </body>
+            </html>
+            EOF
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
