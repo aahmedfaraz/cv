@@ -2,7 +2,7 @@ name: Publish CV PDF to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # run on every push to main branch
+    branches: [ main ]
 
 permissions:
   contents: write
@@ -14,18 +14,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Prepare gh-pages content
       - name: Prepare gh-pages content
         run: |
           mkdir public
           # Copy PDF as-is
           cp cv.pdf public/cv.pdf
           # Create index.html with embedded PDF viewer + download button
-          echo '<!DOCTYPE html>
+          cat > public/index.html << 'EOF'
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -43,14 +42,13 @@ jobs:
   </div>
   <iframe src="cv.pdf"></iframe>
 </body>
-</html>' > public/index.html
+</html>
+EOF
 
-      # 3️⃣ Upload artifact to GitHub Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
-      # 4️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
