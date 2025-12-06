@@ -9,8 +9,8 @@ You can view it directly here:
 </a>
 
 ## Template
-This CV is based on **Akshay Vaishnav’s CV (Mechanical Engineer)** template available on Overleaf:  
-[https://www.overleaf.com/articles/akshay-vaishnavs-cv-mechanical-engineer/szfnbgkvbjrh](https://www.overleaf.com/articles/akshay-vaishnavs-cv-mechanical-engineer/szfnbgkvbjrh)
+This CV is based on template available on Overleaf:  
+[https://www.overleaf.com/latex/templates/autocv/scfvqfpxncwb](https://www.overleaf.com/latex/templates/autocv/scfvqfpxncwb)
 
 ## Files Included
 - **cv.tex** — Main LaTeX file for the CV  
