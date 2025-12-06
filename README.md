@@ -16,7 +16,7 @@ Or download the PDF:
 
 ## Template
 This CV is based on **Akshay Vaishnav’s CV (Mechanical Engineer)** template available on Overleaf:  
-https://www.overleaf.com/articles/akshay-vaishnavs-cv-mechanical-engineer/szfnbgkvbjrh
+[https://www.overleaf.com/articles/akshay-vaishnavs-cv-mechanical-engineer/szfnbgkvbjrh](https://www.overleaf.com/articles/akshay-vaishnavs-cv-mechanical-engineer/szfnbgkvbjrh)
 
 ## Files Included
 - **cv.tex** — Main LaTeX file for the CV  
@@ -24,4 +24,4 @@ https://www.overleaf.com/articles/akshay-vaishnavs-cv-mechanical-engineer/szfnbg
 
 ## How to Compile
 To compile the CV using LaTeX (XeLaTeX recommended), follow the tutorial below:  
-https://www.youtube.com/watch?v=4lyHIQl4VM8
+[https://www.youtube.com/watch?v=4lyHIQl4VM8](https://www.youtube.com/watch?v=4lyHIQl4VM8)
