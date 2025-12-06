@@ -4,14 +4,8 @@ This repository contains the LaTeX source files for my personal CV.
 
 You can view it directly here:
 
-<a href="https://aahmedfaraz.github.io/cv/" target="_blank">
+<a href="https://aahmedfaraz.github.io/cv/cv.pdf" target="_blank">
   <img src="https://img.shields.io/badge/View-CV-blue?style=for-the-badge" />
-</a>
-
-Or download the PDF:
-
-<a href="cv.pdf" target="_blank">
-  <img src="https://img.shields.io/badge/Download-CV-blue?style=for-the-badge" />
 </a>
 
 ## Template
