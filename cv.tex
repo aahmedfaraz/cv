@@ -1,291 +1,216 @@
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2021 Jitin Nair
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%	
-%
+%   CV - Improved Clean Professional Layout
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
-%----------------------------------------------------------------------------------------
-%	DOCUMENT DEFINITION
-%----------------------------------------------------------------------------------------
-
-% article class because we want to fully customize the page and not use a cv template
 \documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
-%	FONT
+%   FONT (optional - uncomment for XeLaTeX)
 %----------------------------------------------------------------------------------------
-
-% % fontspec allows you to use TTF/OTF fonts directly
 \usepackage{fontspec}
 \setmainfont{Cambria}
 
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
-
 %----------------------------------------------------------------------------------------
-%	PACKAGES
+%   PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
-
-%other packages for formatting
-\RequirePackage{color}
-\RequirePackage{graphicx}
+\usepackage{parskip}
+\usepackage{color}
+\usepackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
-
-%tabularx environment
+\usepackage[scale=0.90]{geometry}
 \usepackage{tabularx}
-
-%for lists within experience section
 \usepackage{enumitem}
-
-% centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
-
-%to prevent spillover of tabular into next pages
-\usepackage{supertabular}
-\usepackage{tabularx}
-\newlength{\fullcollw}
-\setlength{\fullcollw}{0.47\textwidth}
-
-%custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
-
-%CV Sections inspired by: 
-%http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
-
-%for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
-
-%Setup hyperref package, and colours for links
-\usepackage[unicode, draft=false]{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
-
-%for social icons
 \usepackage{fontawesome5}
+\usepackage[unicode]{hyperref}
 
-%debug page outer frames
-%\usepackage{showframe}
-
-
-% job listing environments
-\newenvironment{jobshort}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
-    \end{itemize}
-    \end{minipage}    
-    }
-
-
+% Hyperlink color
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks, breaklinks, urlcolor=linkcolour, linkcolor=linkcolour}
 
 %----------------------------------------------------------------------------------------
-%	BEGIN DOCUMENT
+%   SECTION STYLE
+%----------------------------------------------------------------------------------------
+\titleformat{\section}
+  {\Large\bfseries\scshape}
+  {}
+  {0pt}
+  {}
+  [\vspace{-4pt}\titlerule]
+
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+%----------------------------------------------------------------------------------------
+%   ITEM SPACING
+%----------------------------------------------------------------------------------------
+\setlist[itemize]{nosep, topsep=2pt, itemsep=3pt, leftmargin=1em}
+
+%----------------------------------------------------------------------------------------
+%   DOCUMENT
 %----------------------------------------------------------------------------------------
 \begin{document}
-
-% non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
-%	TITLE
+%   HEADER
 %----------------------------------------------------------------------------------------
-
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
-\begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{AHMED FARAZ} \\[7.5pt]
-\href{mailto:ahmedfaraz.contact@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ ahmedfaraz.contact@gmail.com} \ $|$ \ 
-\href{tel:+923413901064}{\raisebox{-0.05\height}\faMobile \ +92 341 3901064} \\
-% \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{https://linkedin.com/in/aahmedfaraz}{\raisebox{-0.05\height}\faLinkedin\ aahmedfaraz} \ $|$ \ 
-\href{https://github.com/aahmedfaraz}{\raisebox{-0.05\height}\faGithub\ aahmedfaraz} \ $|$ \ 
-\end{tabularx}
+\begin{center}
+    {\Huge \textbf{AHMED FARAZ}}\\[2pt]  % Name
+    {\large Software Engineer | Tech Trainer}\\[6pt]  % Headline
+    \href{mailto:ahmedfaraz.contact@gmail.com}{\faEnvelope\ \,ahmedfaraz.contact@gmail.com}
+    \quad | \quad
+    \href{tel:+923413901064}{\faMobile\ +92 341 3901064}
+    \quad | \quad
+    \href{https://linkedin.com/in/aahmedfaraz}{\faLinkedin\ aahmedfaraz}
+    \quad | \quad
+    \href{https://github.com/aahmedfaraz}{\faGithub\ aahmedfaraz}
+\end{center}
 
 %----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
+%   HONORS & ACHIEVEMENTS
 %----------------------------------------------------------------------------------------
-
-%Honors / Achievements
 \section{Honors \& Achievements}
 \begin{itemize}
-\item IELTS – 7.5 (Speaking-7.5, Reading-8.5, Listening-7.5, Writing-6.5)
-\item Won Harvard CS50x Puzzle Day 2025 [\href{https://certificates.cs50.io/5ed8854f-112a-4bbb-bb85-108d92f3233b.pdf?size=letter}{link}]
+    \item \href{https://drive.google.com/file/d/1uHFju1PVdf3HQKPWlZkGIML0tiujyYCi/view?usp=sharing}{IELTS -- \textbf{7.5}} (Speaking \textbf{7.5}, Reading \textbf{8.5}, Listening \textbf{7.5}, Writing \textbf{6.5})
+    \item Won Harvard CS50x Puzzle Day 2025
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	SKILLS
+%   EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{2019 -- 2023} & \textbf{Bachelor of Software Engineering (BSE)} \\[2pt]
+& Bahria University Karachi Campus \hfill CGPA: \textbf{3.09}/4.0 \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%   INTERNATIONAL EVENTS & COMPETITIONS
+%----------------------------------------------------------------------------------------
+\section{International Events \& Competitions}
+\begin{itemize}
+    \item Won \href{https://certificates.cs50.io/5ed8854f-112a-4bbb-bb85-108d92f3233b.pdf?size=letter}{Harvard's CS50x Puzzle Day 2025}, solving all 9/9 puzzles.
+    \item Qualified \href{https://www.facebook.com/codingcompetitions/hacker-cup/2025/certificate/1142880171157242}{Round 1 of Meta Hacker Cup 2025}.
+    \item Cleared the \href{https://icscompetition.org/c/Certificate-QR-2025-FFB74B80AA6-94ee910f6d161e712e70cca319d93761.pdf}{Qualification Round of ICSC 2025}.
+    \item Participated in the \href{https://www.linkedin.com/posts/aahmedfaraz_learning-growthmindset-failuretosuccess-activity-7399509376488615936-rtZd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdJH-cBzPnm9JIV3RhrpK_TvX28bFX_rEY}{CALICO Informatics Competition by UC Berkeley} 2025.
+    \item Competed in the \href{https://lablab.ai/u/@ahmed_faraz702/cmi68u64000fg6z0sucqab7az}{AI Genesis Hackathon} (Google AI Studio, AppliedAI, Qdrant)
+    \hfill \textit{\href{https://www.linkedin.com/posts/aahmedfaraz_hackathon-ai-electron-activity-7397141415165726720-tlQq?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdJH-cBzPnm9JIV3RhrpK_TvX28bFX_rEY}{\faLink Details here}}
+    \item Participated in the \href{https://lablab.ai/u/@ahmed_faraz702/cmit0n778002nda0s8fmq2rur}{Agentic AI Hackathon with IBM watsonx Orchestrate}.
+    \hfill \textit{\href{https://www.linkedin.com/posts/aahmedfaraz_ibm-watsonx-agenticai-activity-7403253209386979328-dxEk?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdJH-cBzPnm9JIV3RhrpK_TvX28bFX_rEY}{\faLink Details here}}
+    \item Competed in Qubic | Hack the Future Hackathon by Qubic.
+    \hfill \textit{\href{https://www.linkedin.com/posts/aahmedfaraz_qubic-lablabai-blockchain-activity-7403681197790408704-Aq7n?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdJH-cBzPnm9JIV3RhrpK_TvX28bFX_rEY}{\faLink Details here}}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%   SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Language} &  \normalsize{JavaScript, Typescript, and Python}\\
-\textbf{Infrastructure-as-Code (IaC)} &  \normalsize{AWS CDK for designing and deploying serverless architectures}\\
-\textbf{20+ AWS Services} &  \normalsize{IAM, Lambda, Appsync, Cognito, S3, Pinpoint, etc.}\\
-\textbf{Frontend Development} &  \normalsize{React, Next.js}\\
-\textbf{Backend Development} &  \normalsize{Node.js, AWS serverless stack}\\
-\textbf{SQL Databases} &  \normalsize{Amazon Aurora, RDS (MySQL, PostgreSQL), Redshift (SQL)}\\
-\textbf{NoSQL Databases} &  \normalsize{DynamoDB, MongoDB}\\
+\textbf{Languages} & JavaScript, TypeScript, Python \\
+\textbf{IaC} & AWS CDK (serverless architectures) \\
+\textbf{AWS Services} & IAM, Lambda, AppSync, Cognito, S3, Pinpoint, and 20+ more \\
+\textbf{Frontend} & React, Next.js \\
+\textbf{Backend} & Node.js, AWS serverless stack \\
+\textbf{SQL Databases} & Aurora, RDS (MySQL, PostgreSQL), Redshift \\
+\textbf{NoSQL} & DynamoDB, MongoDB \\
 \end{tabularx}
 
-% %Experience
-% \section{Work Experience}
-
-% \begin{jobshort}{Designation}{Jan 2021 - present}
-% long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-% \end{jobshort}
-
-
-% \begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-% \item long long line of blah blah that will wrap when the table fills the column width
-% \item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-% \end{joblong}
-
-% Work Experience
-\section*{Work Experience {\small (Overall 4+ years)}}
-\sloppy
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section*{Work Experience \hfill {\small Overall 4+ years}}
+\vspace{2pt}
 
 % Road2Crypto
-\textbf{AWS Full Stack Developer} \hfill \textbf{Remote} (2+ years)\\
-\textbf{Road2Crypto – Miami, Florida, USA} \hfill Mar'23 - Aug'25
+\textbf{AWS Full Stack Developer} \hfill \textbf{Remote (2+ years)} \\
+\textbf{Road2Crypto – Miami, Florida, USA} \hfill Mar 2023 -- Aug 2025
 \begin{itemize}
-    \setlength{\itemsep}{2pt} % space between items
-    \setlength{\parskip}{0pt} % extra paragraph spacing
-    % \setlength{\topsep}{0pt}  % space above/below the list
-    \item \textbf{Built and launched Road2Crypto.}
+    \item Built and launched \textbf{Road2Crypto}, a multi-wallet cross-chain crypto tracker.
+    \item Developed core product features with an international engineering team.
+    \item Delivered features across frontend, backend, and AWS CDK infrastructure.
+\end{itemize}
+
+% Panacloud
+\textbf{AWS Modern Apps Full Stack Developer} \hfill \textbf{On-site (1.5 years)} \\
+\textbf{Panacloud – Karachi, Pakistan} \hfill Oct 2021 -- Feb 2023
+\begin{itemize}
+    \item Joined as Cloud Intern; promoted to \textbf{Full Stack Developer}.
+    \item Built scalable cloud features using Lambda, DynamoDB, Aurora, API Gateway.
+    \item Integrated CloudWatch, SQS, SES/Pinpoint, and Glue.
+    \item Delivered secure and cost-efficient AWS-based solutions.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%   TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section*{Teaching Experience \hfill {\small Overall 2+ years}}
+\vspace{2pt}
+
+% Techbeez
+\textbf{Founder \& Instructor} \hfill \textbf{Remote (1 year)} \\
+\textbf{Techbeez Education – Karachi, Pakistan} \hfill Jul 2022 -- Jul 2023
+\begin{itemize}
+    \item Created and taught the \textbf{Techbeez FWDP – Frontend Web Developer Program} \hfill \textit{\href{https://drive.google.com/drive/folders/1F0KtN6dNdHOWCGQpFw13_GGI_SMug7X_?usp=sharing}{\faLink Course Link}}
+    \item Modules included Basics, Hands-on Projects, and Advanced React.
+    \item Delivered complete lesson plans and recorded video lectures.
+\end{itemize}
+
+% Axiom
+\textbf{Lead Technical Instructor} \hfill \textbf{Part-time (1.5 years)} \\
+\textbf{Axiom Education – Karachi, Pakistan} \hfill Oct 2021 -- Feb 2023
+\begin{itemize}
+    \item Promoted from Assistant Instructor to \textbf{Lead Instructor}.
+    \item Delivered project-based MERN stack training with live coding.
+    \item Mentored junior instructors and trained \textbf{300+ students}.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%   HIGHLIGHTED PROJECTS
+%----------------------------------------------------------------------------------------
+\section*{Highlighted Projects}
+\vspace{2pt} % small space after section title
+
+% Road2Crypto
+\vspace{4pt} % space before project
+\textbf{Road2Crypto – Web Application}
+\begin{itemize}
+    \item Built and launched \textbf{Road2Crypto} \hfill \textit{\href{https://example.com/road2crypto}{\faLink Link}}
     \item A multi-wallet crypto tracker with cross-chain insights.
-    \item \textbf{Collaborated remotely with an international team} to deliver key product features.
+    \item Developed scalable and secure backend architecture using AWS services.
+    \item Integrated Stripe for seamless and secure payments.
+    \item Collaborated remotely with an international team to deliver core features.
 \end{itemize}
 
-% Panacloud
-\textbf{AWS Modern Apps Full Stack Developer} \hfill \textbf{On-site} (1.5 years)\\
-\textbf{Panacloud – Karachi, Pakistan} \hfill Oct'21 - Feb'23
+% AirMouse
+\vspace{6pt} % extra space between projects
+\textbf{AirMouse – AI Desktop App}
 \begin{itemize}
-    \setlength{\itemsep}{2pt} % space between items
-    \setlength{\parskip}{0pt} % extra paragraph spacing
-    % \setlength{\topsep}{0pt}  % space above/below the list
-    \item Joined as a Cloud Intern working on eCommerce and EdTech apps on AWS.
-    \item \textbf{Promoted to Full Stack Developer} delivering new cloud features.
-    \item Led frontend, backend, and AWS CDK infrastructure development.
-    \item \textbf{Built scalable systems} using Lambda, DynamoDB, Aurora, and ApiGateway.
-    \item Integrated CloudWatch, SQS, SES/Pinpoint, and Glue in the system.
-    \item Delivered secure, cost-efficient, and reliable cloud solutions.
-\end{itemize}
-
-
-% Teaching Experience
-\section*{Teaching Experience {\small (Overall 2+ years)}}
-\sloppy
-
-% Road2Crypto
-\textbf{Founder and Instructor} \hfill \textbf{Self-employed – Remote} (1 year)\\
-\textbf{Techbeez Educations – Karachi, Pakistan} \hfill Jul'22 - Jul'23
-\begin{itemize}
-    \setlength{\itemsep}{2pt} % space between items
-    \setlength{\parskip}{0pt} % extra paragraph spacing
-    % \setlength{\topsep}{0pt}  % space above/below the list
-    \item \textbf{Created and taught} the Techbeez FWDP – Frontend Web Developer Program.
-    \item Modules: Basics, Hands-on, Advanced.
-    \item Taught \textbf{web fundamentals}, hands-on \textbf{JS projects}, and \textbf{advanced React}.
-    \item Provided a full lesson plan and recorded video lectures for all modules.
-\end{itemize}
-
-% Panacloud
-\textbf{Lead Technical Instructor} \hfill \textbf{Part-time – On-site} (1.5 years)\\
-\textbf{Axiom Education – Karachi, Pakistan} \hfill Oct’21 – Feb’23
-\begin{itemize}
-    \setlength{\itemsep}{2pt} % space between items
-    \setlength{\parskip}{0pt} % extra paragraph spacing
-    % \setlength{\topsep}{0pt}  % space above/below the list
-    \item Promoted from Assistant Instructor to \textbf{Lead Instructor}, teaching \textbf{MERN} stack (MongoDB, Express.js, React, Node.js) across multiple batches.
-    \item Delivered \textbf{live-coding, project-based sessions} for practical learning.
-    \item Mentored junior instructors and ensured consistent learning outcomes.
-    \item \textbf{Trained 300+ students} preparing for entry into the tech industry.
+    \item Built an AI desktop app that controls the cursor using hand gestures via webcam \hfill \textit{\href{https://example.com/airmouse-demo}{\faLink Demo Link}}
+    \item Used on-device MediaPipe Hands model for fast, real-time hand tracking.
+    \item Created during the \textbf{AI Genesis Hackathon} by lablab.ai.
+    \item First time working with Electron and AI/ML models.
+    \item Download: Scroll down and click \textbf{AirMouse-Windows-1.0.0-Setup.exe} \hfill \textit{\href{https://example.com/airmouse-download}{\faLink Download Link}}
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+%   VOLUNTEER WORK
 %----------------------------------------------------------------------------------------
-\section{Education}
+\section*{Volunteer Work}
 
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2019 - 2023 & Bachelor of Software Engineering (BSE)\\at \textbf{Bahria University Karachi Campus} \hfill \normalsize (GPA: 3.09/4.0) \\
-
-% \begin{tabularx}{\linewidth}{@{}l X@{}}	
-% 2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-% 2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-% 2022 & Class 12th Some Board \hfill  (Grades) \\
-
-% 2021 & Class 10th Some Board \hfill  (Grades) \\
-\end{tabularx}
-  
-% %Projects
-% \section{Projects}
-
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-% \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-% \end{tabularx}
+\textbf{Trainer and Moderator} \hfill \textbf{Remote (Aug 2025 -- Present)} \\
+\textbf{iCodeGuru – Santa Clara, California} 
+\begin{itemize}
+    \item Conducted a free \textbf{IELTS Speaking Course} for under-privileged students, offering structured lessons and practice sessions.
+    \item YouTube Playlist \hfill \textit{\href{https://example.com/playlist}{\faLink Link}}
+\end{itemize}
 
 % %----------------------------------------------------------------------------------------
-% %	PUBLICATIONS
+% %   FOOTER
 % %----------------------------------------------------------------------------------------
-% \section{Publications}
-% \begin{refsection}[citations.bib]
-% \nocite{*}
-% \printbibliography[heading=none]
-% \end{refsection}
-
-\vfill
-\center{\footnotesize Last updated: \today}
+% \vfill
+% \center{\footnotesize Last updated: \today}
 
 \end{document}
