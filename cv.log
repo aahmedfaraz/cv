@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.12.6)  11 DEC 2025 17:12
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.12.6)  16 DEC 2025 13:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -501,27 +501,7 @@ Package hyperref Info: Link coloring ON on input line 54.
 
  [1
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 223--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
-
- []
-
-[3] (cv.aux)
+] [2] [3] (cv.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -530,12 +510,12 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: 2E3BE0AA642C0F3E6FD7448A8919F1EE;548.
  ) 
 Here is how much of TeX's memory you used:
- 14212 strings out of 409617
- 265005 string characters out of 5772998
- 1938191 words of memory out of 5000000
- 36139 multiletter control sequences out of 15000+600000
- 561373 words of font info for 72 fonts, out of 8000000 for 9000
+ 14208 strings out of 409617
+ 264972 string characters out of 5772998
+ 1941191 words of memory out of 5000000
+ 36140 multiletter control sequences out of 15000+600000
+ 561365 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,8n,93p,1204b,435s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,8n,93p,1204b,425s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cv.xdv (3 pages, 53128 bytes).
+Output written on cv.xdv (3 pages, 62360 bytes).
