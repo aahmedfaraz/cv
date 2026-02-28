@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1766591157.29721 "cv.xdv" "cv.pdf" "cv" 1766591157.62384 0
-  "cv.xdv" 1766591157 53548 8ebb66959caa17cec86ab5b0fd687b04 "xelatex"
+["xdvipdfmx"] 1772252941.33037 "cv.xdv" "cv.pdf" "cv" 1772252941.81432 0
+  "cv.xdv" 1772252941 54000 361d0988386f7101be0b97e42a99ec3c "xelatex"
   (generated)
   "cv.pdf"
   (rewritten before read)
-["xelatex"] 1766591155.58571 "d:/GitHub/cv/cv.tex" "cv.xdv" "cv" 1766591157.61769 0
+["xelatex"] 1772252939.67591 "d:/GitHub/cv/cv.tex" "cv.xdv" "cv" 1772252941.81118 0
   "C:/Users/AhmedFaraz/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1764997596 37548078 9b49533e0e9536db70926fecf52bab3e ""
   "C:/Users/AhmedFaraz/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136754254 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Users/AhmedFaraz/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -80,10 +80,10 @@
   "C:/Users/AhmedFaraz/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1700599895 7147 d45559f8a31b8c53ada0640516660003 ""
   "C:/Users/AhmedFaraz/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/AhmedFaraz/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "cv.aux" 1766591157 589 93bc71a696d167bac1baea516fd473f6 "xelatex"
-  "cv.out" 1766591157 548 2e3be0aa642c0f3e6fd7448a8919f1ee "xelatex"
-  "cv.tex" 1766591136 15122 89ab9ad1550135ccbc74c68ca2636ed7 ""
-  "d:/GitHub/cv/cv.tex" 1766591136 15122 89ab9ad1550135ccbc74c68ca2636ed7 ""
+  "cv.aux" 1772252941 589 93bc71a696d167bac1baea516fd473f6 "xelatex"
+  "cv.out" 1772252941 548 2e3be0aa642c0f3e6fd7448a8919f1ee "xelatex"
+  "cv.tex" 1772252919 15217 81e1b07d37b5ccf9b92cb8c699cc49bb ""
+  "d:/GitHub/cv/cv.tex" 1772252919 15217 81e1b07d37b5ccf9b92cb8c699cc49bb ""
   (generated)
   "cv.aux"
   "cv.log"
