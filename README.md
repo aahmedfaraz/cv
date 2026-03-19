@@ -1,44 +1,39 @@
-# PDF Merger (PDF + Images → Single PDF)
+# Ahmed Faraz - Documents
 
-## 1. Setup
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
+Welcome! Here you can access my CV and my Portfolio.
 
 ---
 
-## 2. Usage
+<div style="display:flex; gap:20px; margin-top:20px;">
 
-### Required Files
+<!-- CV Button -->
+<a href="cv.pdf" target="_blank" style="
+    text-decoration:none;
+    background-color:#007ACC;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:16px;
+">
+  CV
+</a>
 
-* `merge.py`
-* `cv.pdf` (can have any number of pages)
-* Images:
+<!-- Portfolio Button -->
+<a href="portfolio.pdf" target="_blank" style="
+    text-decoration:none;
+    background-color:#28A745;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:16px;
+">
+  Portfolio (CV + Transcript + IELTS)
+</a>
 
-  * `transcript.jpg`
-  * `ielts.jpg`
-
-> You can add more PDFs or images later by editing the lists inside `merge.py`.
+</div>
 
 ---
 
-### Run Script
-
-```bash
-py merge.py
-```
-
----
-
-### Output
-
-* `portfolio.pdf`
-* Contains:
-
-  1. All pages from `cv.pdf`
-  2. Followed by each image as separate pages
-
----
+> Click the buttons above to view the PDF files directly.
