@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.12.6)  28 FEB 2026 09:28
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.12.6)  26 MAR 2026 08:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/GitHub/cv/cv.tex
-(d:/GitHub/cv/cv.tex
+**d:/GitHub/cv/cv-latex/cv.tex
+(d:/GitHub/cv/cv-latex/cv.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -23,9 +23,16 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.
+sty
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\
+xparse.sty
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2024-01-04 L3 programming layer (loader) 
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backen
+d-xetex.def
 File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
 \g__graphics_track_int=\count191
 \l__pdf_internal_box=\box51
@@ -36,8 +43,11 @@ File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
 Package: xparse 2023-10-10 L3 Experimental document command parser
 )
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex.sty
-Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-
+xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
+X
 \l__fontspec_script_int=\count195
 \l__fontspec_language_int=\count196
 \l__fontspec_strnum_int=\count197
@@ -52,9 +62,12 @@ Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_tmpa_dim=\dimen141
 \l__fontspec_tmpb_dim=\dimen142
 \l__fontspec_tmpc_dim=\dimen143
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg)))
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.
+cfg)))
 
 Package fontspec Info: Font family 'Cambria(0)' created for font 'Cambria'
 (fontspec)             with options [Ligatures=TeX].
@@ -63,71 +76,111 @@ Package fontspec Info: Font family 'Cambria(0)' created for font 'Cambria'
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"Cambria/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             <->"Cambria/OT:script=latn;language=dflt;mapping=tex-tex
+t;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->"Cambria/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             <->"Cambria/OT:script=latn;language=dflt;+smcp;mapping=t
+ex-text;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"Cambria/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             <->"Cambria/B/OT:script=latn;language=dflt;mapping=tex-t
+ext;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->"Cambria/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             <->"Cambria/B/OT:script=latn;language=dflt;+smcp;mapping
+=tex-text;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"Cambria/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             <->"Cambria/I/OT:script=latn;language=dflt;mapping=tex-t
+ext;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->"Cambria/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             <->"Cambria/I/OT:script=latn;language=dflt;+smcp;mapping
+=tex-text;"
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->"Cambria/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             <->"Cambria/BI/OT:script=latn;language=dflt;mapping=tex-
+text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->"Cambria/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             <->"Cambria/BI/OT:script=latn;language=dflt;+smcp;mappin
+g=tex-text;"
 
  (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.st
+y
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoption
+s.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.st
+y
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.
+sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkey
+s.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+))
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.
+sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count272
-)) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+))
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color
+.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 149.
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex
+.def
 File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor
+.ltx))
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.
+sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.
+sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graph
+ics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
 )
 \Gin@req@height=\dimen144
 \Gin@req@width=\dimen145
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color
+.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 
-Package xcolor Warning: Package option `usenames' is obsolete and ignored on input line 266.
+Package xcolor Warning: Package option `usenames' is obsolete and ignored on in
+put line 266.
 
 Package xcolor Info: Driver file: xetex.def on input line 274.
 LaTeX Info: Redefining \color on input line 758.
-(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor
+.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `RGB' extended on input line 1366.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
@@ -136,13 +189,18 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.
+def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.
+sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count273
@@ -157,9 +215,12 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen152
 \Gm@layoutvoffset=\dimen153
 \Gm@dimlist=\toks18
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.
+cfg))
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen154
 \ar@mcellbox=\box52
@@ -176,7 +237,9 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \TX@delta=\dimen160
 \TX@cols=\count276
 \TX@ftn=\toks20
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.
+sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip52
 \enit@outerparindent=\dimen161
@@ -184,7 +247,9 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box54
 \enit@count@id=\count277
 \enitdp@description=\count278
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.
+sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box55
 \beforetitleunit=\skip53
@@ -195,7 +260,8 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen164
 \titlewidthlast=\dimen165
 \titlewidthfirst=\dimen166
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \c@tracingmulticols=\count279
 \mult@box=\box56
@@ -264,45 +330,83 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \mult@nat@firstbox=\box100
 \colbreak@box=\box101
 \mc@col@check@num=\count288
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.
+sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip57
 \multirow@cntb=\count289
 \multirow@dima=\skip58
 \bigstrutjot=\dimen176
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesome5.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fonta
+wesome5.sty
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2
+e\l3keys2e.sty
 Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesome5-utex-helper.sty
-Package: fontawesome5-utex-helper 2022/05/02 v5.15.4 uTeX helper for fontawesome5
-LaTeX Font Info:    Trying to load font information for TU+fontawesomefree on input line 69.
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\tufontawesomefree.fd)
-LaTeX Font Info:    Trying to load font information for TU+fontawesomebrands on input line 70.
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\tufontawesomebrands.fd))) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fonta
+wesome5-utex-helper.sty
+Package: fontawesome5-utex-helper 2022/05/02 v5.15.4 uTeX helper for fontawesom
+e5
+LaTeX Font Info:    Trying to load font information for TU+fontawesomefree on i
+nput line 69.
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\tufon
+tawesomefree.fd)
+LaTeX Font Info:    Trying to load font information for TU+fontawesomebrands on
+ input line 70.
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\tufon
+tawesomebrands.fd)))
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.
+sty
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwar
+err.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvd
+efinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfesc
+ape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdfte
+xcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-)) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+))
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.st
+y
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltx
+macro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.st
+y
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.s
+ty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.
+sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\g
+ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count290
@@ -310,13 +414,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 \@linkdim=\dimen177
 \Hy@linkcounter=\count291
 \Hy@pagecounter=\count292
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.de
+f
 File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
-) (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+)
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.
+sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count293
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4064.
@@ -330,10 +439,15 @@ Package hyperref Info: Bookmarks ON on input line 4448.
 \c@Hy@tempcnt=\count294
 LaTeX Info: Redefining \url on input line 4786.
 \XeTeXLinkMargin=\dimen178
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.st
+y
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigin
+tcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
 ))
 \Fld@menulength=\count295
 \Field@Width=\dimen179
@@ -345,7 +459,9 @@ Package hyperref Info: backreferencing OFF on input line 6080.
 Package hyperref Info: Link coloring OFF on input line 6085.
 Package hyperref Info: Link coloring with OCG OFF on input line 6090.
 Package hyperref Info: PDF/A mode OFF on input line 6095.
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.
+sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -354,22 +470,32 @@ package with kernel methods
 \c@Hfootnote=\count298
 )
 Package hyperref Info: Driver (autodetected): hxetex.
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.de
+f
 File: hxetex.def 2023-11-26 v7.01g Hyperref driver for XeTeX
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\string
+enc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
 )
 \pdfm@box=\box102
 \c@Hy@AnnotLevel=\count299
 \HyField@AnnotCount=\count300
 \Fld@listcount=\count301
 \c@bookmark@seq@number=\count302
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rer
+unfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\un
+iquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
 )
 \Hy@SectionHShift=\skip59
 )
@@ -387,8 +513,10 @@ LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 54.
- (C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
+4.
+
+(C:\Users\AhmedFaraz\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 54.
@@ -442,7 +570,8 @@ LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/Cambria(0)/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Cambria(0)/m/n --> TU/Cambria(0)/m/n on input line 54.
+(Font)                  TU/Cambria(0)/m/n --> TU/Cambria(0)/m/n on input line 5
+4.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/Cambria(0)/m/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
@@ -452,7 +581,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Cambria(0)/m/n --> TU/Cambria(0)/b/n on input line 54.
+(Font)                  TU/Cambria(0)/m/n --> TU/Cambria(0)/b/n on input line 5
+4.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/Cambria(0)/b/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
@@ -501,7 +631,7 @@ Package hyperref Info: Link coloring ON on input line 54.
 
  [1
 
-] [2] (cv.aux)
+] [2] [3] (cv.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -511,11 +641,11 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  14204 strings out of 409617
- 264850 string characters out of 5772998
- 1941191 words of memory out of 5000000
+ 264877 string characters out of 5772998
+ 1939191 words of memory out of 5000000
  36136 multiletter control sequences out of 15000+600000
  561365 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,8n,93p,1204b,321s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,8n,93p,1213b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cv.xdv (2 pages, 54000 bytes).
+Output written on cv.pdf (3 pages).
