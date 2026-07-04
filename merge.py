@@ -8,7 +8,7 @@ import os
 
 # Add your PDF files here (can be 1 or more)
 pdf_files = [
-    "cv.pdf",
+    "./cv-latex/cv.pdf",
     # pdf_files.append("another_file.pdf")  # <-- example to add more PDFs
 ]
 
